@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Comparador de Pokémon</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h1>Comparador de Pokémon</h1>
+<div class="container">
+    <div class="card">
+        <select onchange="cargarPokemon(this.value, 0)">
+            <option value="">Selecciona un Pokémon</option>
+        </select>
+        <div class="info" id="pokemon0"></div>
+    </div>
+    <div class="card">
+        <select onchange="cargarPokemon(this.value, 1)">
+            <option value="">Selecciona un Pokémon</option>
+        </select>
+        <div class="info" id="pokemon1"></div>
+    </div>
+    <div class="card">
+        <select onchange="cargarPokemon(this.value, 2)">
+            <option value="">Selecciona un Pokémon</option>
+        </select>
+        <div class="info" id="pokemon2"></div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
